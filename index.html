@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google</title>
+</head>
+<body>
+
+  <style>
+
+    body {
+        background-color: white;
+        margin: 0;
+        font-family: arial, sans-serif;
+        display: grid;
+        grid-template-rows: 10% 80% 10%;
+    }
+
+    header {
+        grid-row: 1/2
+        margin: 10px;
+        display: grid;
+        grid-template-columns: auto 60vw auto;
+    }
+
+    main {
+        grid-row: 2/3;
+    }
+
+    .content {
+        width: 60vw;
+        margin: 20vh auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    footer {
+        grid-row: 3/4;
+        
+    }
+
+    .links {
+        background-color: lightgrey;
+        padding: 5px 10px;
+        border: darkgrey 1px solid;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    input {
+        border-style: none;
+        width: 90%;
+        height: 100%;
+        padding: 20px;
+        outline: none;
+        font-size: 1.1rem;
+    }
+
+    .left-block {
+        grid-column: 1/2;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 10px;
+    }
+
+    .right-block {
+        grid-column: 3/4;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 10px;
+    }
+
+    .sign-up {
+        color: #fff;
+        background: -moz-linear-gradient(top, #4285f4, #4683ea);
+        font-weight: bold;
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+        height: 2rem;
+    }
+
+    .round-search {
+        width: 90%;
+        height: 3rem;
+        border-radius: 20px;
+        border: 1px darkgrey solid;
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .small {
+        width: 30px;
+        padding: 10px;
+    }
+
+
+p {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+  }
+
+.links > p {
+    margin-left: 2rem;
+}
+
+  </style>
+
+ <header>
+     <div class="left-block">
+         <p>Über Google</p>
+         <p>Store</p>
+        </div>
+    <div class="right-block">
+         <p>Gmail</p>
+         <p>Bilder</p>
+         <button class="sign-up">Anmelden</button>
+         </div>
+     
+ </header>
+
+ <main>
+    <div class="content">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google-logo">
+        <div class="round-search">
+            <img class="small" src="./pics/noun_magnify glass_1585668.png" alt="magnify glass by Made from the Noun Project">
+        <input type="search"  />
+        </div>
+    </div>
+ </main>
+
+ <footer>
+     <div class="links">
+        <p>Deutschland</p>
+    </div>
+    <div class="links">
+        <p>Werbeprogramme</p>
+        <p>Unternehmen</p>
+        <p>Wie funktioniert die Google Suche?</p>
+    </div>
+ </footer>
+
+
+</body>
+</html>
